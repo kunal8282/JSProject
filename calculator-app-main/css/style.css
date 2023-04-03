@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-white);
+}
+
+:root{
+    --main-bg: hsl(222, 26%, 31%);
+    --toggle-bg:hsl(223, 31%, 20%);
+    --screen-bg: hsl(224, 36%, 15%);
+    --key-bg: hsl(225, 21%, 49%);
+    --key-shadow-color: hsl(224, 28%, 35%);
+    --text-dark-grayish-blue: hsl(221, 14%, 31%);
+    --text-white: hsl(0, 0%, 100%);
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--main-bg);
+    position: relative;
+}
+
+.calc_body{
+    width: 360px;
+}
+
+.calc_body .calc_head{
+    padding: 0 10px;
+}
+
+.calc_head p{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.calc_body .calc_display{
+    background-color: var(--screen-bg);
+    display: flex;
+    justify-content: end;
+    padding: 15px;
+    margin: 8px 0;
+    border-radius: 10px;
+}
+
+.calc_display h1{
+    font-size: 32px;
+    overflow: hidden;
+}
+
+.calc_body .numpad{
+    background-color: var(--toggle-bg);
+    border-radius: 10px;
+}
+
+.numpad .numpad_1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    text-align: center;
+    padding: 10px;
+}
+
+.numpad_btn{
+    background-color: #fff;
+    color: var(--text-dark-grayish-blue);
+    padding: 5px 12px;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.numpad_1 .del_btn{
+    background-color: var(--key-bg);
+    color: white;
+}
+
+.numpad .numpad_2{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 10px;
+}
+
+.numpad_2 .reset_btn{
+    background-color: var(--key-shadow-color);
+    color: var(--text-white);
+}
+
+.numpad_2 .equal_btn{
+    background-color: red;
+    color: var(--text-white);
+}
+
+.attribution{
+    position: absolute;
+    bottom: 0;
+    padding: 10px;
+}
+
+.attribution a{
+    color: var(--key-bg);
+    text-decoration: none;
+}
+
+.attribution a:active{
+    color: whitesmoke;
+}
