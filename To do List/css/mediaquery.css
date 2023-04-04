@@ -1,0 +1,11 @@
+@media screen and ( max-width:900px) {
+    .todos{
+        width: 360px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .todos{
+        width: 90%;
+    }
+}
